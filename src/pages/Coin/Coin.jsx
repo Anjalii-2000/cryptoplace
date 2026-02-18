@@ -35,6 +35,7 @@ const Coin = () => {
   useEffect(() => {
     fetchCoinData();
     fetchHistoricalData();
+    window.scrollTo(0, 0);
   }, [currency])
 
   if (coinData && historicalData) {

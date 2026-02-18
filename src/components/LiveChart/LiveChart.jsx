@@ -6,6 +6,7 @@ const LiveChart = ({ historicalData }) => {
     const [data, setData] = useState([["Date", "Prices"]])
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         let dataCopy = [["Date", "Prices"]];
         if (historicalData.prices) {
             historicalData.prices.map((item) => {
